@@ -19,7 +19,7 @@ public class MvcConfigurer implements WebMvcConfigurer {
 
     @Bean
     public CacheManager cacheManager() {
-        return new ConcurrentMapCacheManager("products");
+        return new ConcurrentMapCacheManager("product");
     }
 
     @Override

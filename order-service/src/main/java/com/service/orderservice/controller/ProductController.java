@@ -17,7 +17,7 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping("/{id}")
-    public ProductEntity getOrder(@PathVariable Integer id) {
+    public ProductEntity getProduct(@PathVariable Integer id) {
         return productService.getById(id);
     }
 }

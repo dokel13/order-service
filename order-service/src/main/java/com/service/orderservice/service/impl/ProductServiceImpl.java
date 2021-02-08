@@ -14,7 +14,7 @@ public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
 
-//    @Cacheable("product")
+    @Cacheable("product")
     public ProductEntity getById(Integer id) {
         return productRepository.getById(id);
     }
